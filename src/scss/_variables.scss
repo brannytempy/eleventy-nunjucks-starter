@@ -1,0 +1,102 @@
+// Customize me!
+
+// SCSS VARS
+$breakpoint-1: 800px;
+$breakpoint-2: 1600px;
+
+:root {
+  --background: #ffffff;
+  --background-alt: #E1E1E1;
+  --border: #5D7177;
+  --text: #2F474F;
+  --text-light: #42575F;
+  --accent: #e66465;
+
+  // max-widths
+  --max-width: 100rem;
+  --text-max-width: 60rem;
+
+  // font-families
+  --font-family: 'Inter', sans-serif;
+
+  // font-weights
+  --font-weight-body: 400;
+  --font-weight-bold: 800;
+
+  // typographic styles
+  --h1-font-size: 4.9rem;
+  --h1-font-weight: var(--font-weight-bold);
+  --h1-line-height: 5.6rem;
+  --h1-letter-spacing: 0;
+
+  --h2-font-size: 3.9rem;
+  --h2-font-weight: var(--font-weight-bold);
+  --h2-line-height: 4rem;
+  --h2-letter-spacing: 0;
+
+  --h3-font-size: 3.1rem;
+  --h3-font-weight: var(--font-weight-bold);
+  --h3-line-height: 3.2rem;
+  --h3-letter-spacing: 0;
+
+  --h4-font-size: 2.5rem;
+  --h4-font-weight: var(--font-weight-bold);
+  --h4-line-height: 3.2rem;
+  --h4-letter-spacing: 0;
+
+  --h5-font-size: 1.6rem;
+  --h5-font-weight: var(--font-weight-bold);
+  --h5-line-height: 2.4rem;
+  --h5-letter-spacing: 0;
+
+  --h6-font-size: 1.4rem;
+  --h6-font-weight: var(--font-weight-bold);
+  --h6-line-height: 2.4rem;
+  --h6-letter-spacing: 0;
+
+  --body-font-size: 2rem;
+  --body-font-weight: var(--font-weight-body);
+  --body-line-height: 3.2rem;
+  --body-letter-spacing: 0;
+
+  --small-font-size: 1.6rem;
+  --small-font-weight: var(--font-weight-body);
+  --small-line-height: 2.4rem;
+  --small-letter-spacing: 0;
+
+  //spacing
+  --space-1: 0.8rem;
+  --space-2: 1.6rem;
+  --space-3: 3.2rem;
+  --space-4: 6.4rem;
+  --space-5: 5vw;
+
+  // border-radius
+  --border-radius-1: 1rem;
+
+  // box-shadow
+  --shadow-color: 286deg 16% 56%;
+  --box-shadow-1: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --box-shadow-2: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --box-shadow-3: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  ;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1A1920;
+    --background-alt: #2E2D38;
+    --border: #77738C;
+    --text: #d1d1d2;
+    --text-light: #A5A3B1;
+    --accent: #84A6FF;
+  }
+}

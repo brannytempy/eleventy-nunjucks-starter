@@ -1,0 +1,120 @@
+// Boilerplate typography system
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// Import variables for breakpoints
+@import "variables";
+
+html {
+    font-size: 50%;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-body);
+    text-rendering: optimizeLegibility;
+    color: var(--text);
+
+    @media (min-width: $breakpoint-1) {
+        font-size: 62.5%; // sets 1rem = 10px
+    }
+
+    @media (min-width: $breakpoint-2) {
+        font-size: 70%;
+    }
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+h1,
+.h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    line-height: var(--h1-line-height);
+    letter-spacing: var(--h1-letter-spacing);
+}
+
+h2,
+.h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-height);
+    letter-spacing: var(--h2-letter-spacing);
+}
+
+h3,
+.h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height);
+    letter-spacing: var(--h3-letter-spacing);
+}
+
+h4,
+.h4 {
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-font-weight);
+    line-height: var(--h4-line-height);
+    letter-spacing: var(--h4-letter-spacing);
+}
+
+h5,
+.h5 {
+    font-size: var(--h5-font-size);
+    font-weight: var(--h5-font-weight);
+    line-height: var(--h5-line-height);
+    letter-spacing: var(--h5-letter-spacing);
+}
+
+h6,
+.h6 {
+    font-size: var(--h6-font-size);
+    font-weight: var(--h6-font-weight);
+    line-height: var(--h6-line-height);
+    letter-spacing: var(--h6-letter-spacing);
+}
+
+p,
+li {
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    letter-spacing: var(--body-letter-spacing);
+}
+
+small,
+.small {
+    font-size: var(--small-font-size);
+    font-weight: var(--small-font-weight);
+    line-height: var(--small-line-height);
+    letter-spacing: var(--small-letter-spacing);
+}
+
+ul,
+ol {
+    padding-left: var(--space-3);
+
+    li {
+        margin-bottom: var(--space-2);
+    }
+}
+
+blockquote {
+    background-color: var(--background-alt);
+    padding: var(--space-2);
+    color: var(--text-light);
+    border-radius: var(--border-radius-1);
+    @extend small;
+
+    p {
+        @extend small;
+    }
+}

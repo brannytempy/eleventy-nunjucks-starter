@@ -1,0 +1,66 @@
+// demo file - can delete this
+
+
+html {
+    background: linear-gradient(#e66465, #9198e5);
+    min-height: 100vh;
+}
+
+code {
+    background-color: var(--background-alt);
+    @extend p;
+    display: inline;
+    padding: 0.3rem var(--space-1);
+    border-radius: var(--border-radius-1);
+}
+
+.page-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background);
+    padding: var(--space-3);
+    box-shadow: var(--box-shadow-3);
+}
+
+.site-navigation {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--space-4);
+    background-color: var(--background);
+    justify-content: baseline;
+    padding: var(--space-2) 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        @media (min-width: $breakpoint-1) {
+            flex-direction: row;
+        }
+
+        li {
+            margin-left: var(--space-2);
+            @extend small;
+
+            a {
+                color: var(--text-light);
+            }
+
+            &.active {
+                a {
+                    color: var(--accent);
+                    font-weight: var(--font-weight-bold);
+                }
+            }
+        }
+    }
+}

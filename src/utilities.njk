@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+{% set utilitiesActive = 'active' %}
+{% block content %}
+
+<div class="spacing-type">
+    <h1>Utilities</h1>
+    <p>Below is an index of all of the utilities provided with this kit.</p>
+</div>
+<hr style="border-style: dotted;" />
+<div class="spacing-type">
+    <h2>Spacing classes</h2>
+    <p>This kit embraces that spacing should be handled at the container level. It should be avoided at all costs adding individual spacing to individual elements, unless a use case demands it.</p>
+    <p>To make use of this, simply append <code>.space-X</code> to a container. Options <code>.space-1 through .space-5</code> are available. These classes will put the corresponding spacing token between each children.
+    <br /><br />
+    <h3>Spacing Standard</h3>
+    <p>To keep things consistent, there are 2 utility classes available:</p>
+    <ol>
+        <li><code>.spacing-type</code> will space all elements accordiong to the type scale.</li>
+        <li><code>.spacing-layout</code> will space all elements accordiong to the layout rhythm.</li>
+    </ol>
+</div>
+
+{% endblock %}

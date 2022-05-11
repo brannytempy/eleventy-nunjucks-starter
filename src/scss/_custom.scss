@@ -1,0 +1,24 @@
+// Custom SCSS goes in here
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding: var(--space-5);
+}
+
+hr {
+    border-color: var(--border);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
